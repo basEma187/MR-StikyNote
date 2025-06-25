@@ -850,11 +850,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: MR-StikyNote
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 0022e5cac704dd01
   metroApplicationDescription: MR-StikyNote
   wsaImages: {}
   metroTileShortName: MR-StikyNote
@@ -871,7 +871,9 @@ PlayerSettings:
     a: 1}
   metroSplashScreenUseBackgroundColor: 0
   syncCapabilities: 0
-  platformCapabilities: {}
+  platformCapabilities:
+    WindowsStoreApps:
+      Microphone: True
   metroTargetDeviceFamilies: {}
   metroFTAName: 
   metroFTAFileTypes: []
