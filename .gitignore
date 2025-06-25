@@ -23,6 +23,9 @@
 # Recordings can get excessive in size
 /[Rr]ecordings/
 
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!*/[Aa]ssets/**/*.meta
+
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
 
@@ -31,6 +34,12 @@
 
 # Visual Studio cache directory
 .vs/
+
+# Jetbrains cache directory
+.idea/
+
+# Visual Studio Code cache directory
+.vscode/
 
 # Gradle cache directory
 .gradle/
@@ -61,6 +70,10 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
+# Unity3D Test Runner generated files
+*/[Aa]ssets/InitTestScene*.unity
+*/[Aa]ssets/InitTestScene*.unity.meta
+
 # Builds
 *.apk
 *.aab
@@ -83,3 +96,11 @@ crashlytics-build.properties
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# Project Specific List
+*/[Aa]ssets/[Bb]uild[Rr]eports*
+*/[Aa]ssets/[Oo]culus*
+*/[Aa]ssets/[Ss]amples*
+*/[Aa]ssets/TextMesh Pro*
+*.pfx
+*.pfx.meta
